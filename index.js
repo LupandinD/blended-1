@@ -47,8 +47,27 @@
 //иначе выводить строку "Неверный пароль!"
 
 //
-// const loginInput = prompt("Введите свой логин");
+const loginInput = prompt("Введите свой логин");
+console.log({ loginInput });
+if (loginInput === "Админ") {
+    const passwordInput = prompt("Введите пароль");
+    if (passwordInput === "Я главный") {
+        console.log("Здравствуйте!")
+    }
+    else {
+        console.log("Неверный пароль!")
+    }
+ }
+else if (!loginInput)
+{
+    console.log("Отменено");
+ }
+else {
+    console.log("Я вас не знаю");
+}
+    
 //
+
 
 // 6. При загрузке страницы пользователю предлагается
 //в prompt ввести число. Ввод добавляется к значению
